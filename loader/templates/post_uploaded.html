@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<main>
+    <a href="/" class="link">Назад</a>
+
+    <h1>Пост добавлен</h1>
+
+    <div>
+        <img src="{{ post['pic'] }}" width=100% alt="Технические шоколадки">
+        <p> {{ post['content'] }}</p>
+    </div>
+
+    <hr>
+
+    <a href="/post/form" class="button">Добавить ещё пост</a>
+
+</main>
+
+</body>
+</html>
