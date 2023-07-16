@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Посты по запросу "{{ search_by }}"</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<main>
+    <a href="/" class="link">Назад</a>
+
+    <h1>Все посты найденные по запросу "{{ search_by }}"</h1>
+
+    {% for post in posts %}
+    <div>
+        <img src="{{ post['pic'] }}" width=100% alt="Технические шоколадки">
+        <p>{{ post['content'] }}</p>
+        <hr>
+    </div>
+    {% endfor %}
+
+    <a href="/post/form" class="button">Добавить ещё пост</a>
+
+</main>
+</body>
+</html>
